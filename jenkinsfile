@@ -1,0 +1,8 @@
+node('ubununode1') {
+    stage('GIT') {
+        git 'https://github.com/vashokkumar/jenkinpractisebuildproject.git'
+    }
+            stage ('package') {
+                 sh 'mvn package'
+    }
+}
